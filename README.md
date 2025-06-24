@@ -27,12 +27,13 @@ A Quora-inspired web application built with **Node.js**, **Express**, and **EJS*
 
 ---
 
-## 📂 Folder Structure
+## 📁 Project Structure
 
-├── index.js # Main server file
-├── views/ # EJS templates: index, new, show, edit
-├── public/ # CSS files and assets
-├── package.json
+├── index.js          # Main server file  
+├── views/            # EJS templates (index.ejs, new.ejs, show.ejs, edit.ejs)  
+├── public/           # Static files like CSS (style.css), images, icons  
+├── package.json      # Project metadata and dependencies  
+
 
 
 ---
