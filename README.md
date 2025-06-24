@@ -58,7 +58,3 @@ A Quora-inspired web application built with **Node.js**, **Express**, and **EJS*
 
 ## 🙌 Why I Built This
 This project was created as part of my backend learning journey. It helped me understand routing, templating, RESTful operations, and server logic. Inspired by Quora’s functionality, I recreated its core features with a personal touch.
-
-## 📄 License
-MIT
-
