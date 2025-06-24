@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Question - Quora</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Quora</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Ask a question</h2>
+            <form method="post" action="/posts">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="content">Your Question</label>
+                    <textarea id="content" name="content" placeholder="What do you want to ask?" required></textarea>
+                </div>
+
+                <button type="submit">Submit Question</button>
+                <a href="/" style="margin-left: 15px; color: var(--quora-dark-gray);">Cancel</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

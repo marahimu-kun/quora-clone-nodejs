@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora - Questions</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Quora</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="/posts/new" class="create-post-btn">
+            <i class="fas fa-plus"></i> Add Question
+        </a>
+
+        <div class="posts-list">
+            <% for(post of posts){ %>
+                <div class="post">
+                    <div class="username">@<%= post.username %>
+                    </div>
+                    <div class="content">
+                        <%= post.content %>
+                    </div>
+                    <div class="post-actions">
+                        <a href="/posts/<%= post.id %>">
+                            <i class="fas fa-comment"></i> See details
+                        </a>
+                        <a href="/posts/<%= post.id %>/edit">
+                            <i class="fas fa-edit"></i> Edit
+                        </a>
+                        <form action="/posts/<%= post.id %>?_method=DELETE" method="post" style="display: inline;">
+                            <button type="submit">
+                                <i class="fas fa-trash"></i> Delete
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Question - Quora</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Quora</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Edit your question</h2>
+            <div style="margin-bottom: 20px;">
+                <div style="color: var(--quora-dark-gray); margin-bottom: 5px;">Posted by @<%= post.username %>
+                </div>
+                <div style="font-size: 12px; color: var(--quora-dark-gray);">Question ID: <%= post.id %>
+                </div>
+            </div>
+
+            <form method="POST" action="/posts/<%= post.id%>?_method=PATCH">
+                <div class="form-group">
+                    <label for="content">Question</label>
+                    <textarea id="content" name="content" required><%= post.content %></textarea>
+                </div>
+
+                <button type="submit">Update Question</button>
+                <a href="/posts/<%= post.id %>" style="margin-left: 15px; color: var(--quora-dark-gray);">Cancel</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
