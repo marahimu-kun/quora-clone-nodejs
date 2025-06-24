@@ -42,7 +42,7 @@ A Quora-inspired web application built with **Node.js**, **Express**, and **EJS*
 
 1. **Clone this repo**
    ```bash
-   git clone https://github.com/your-username/quora-clone-nodejs
+   git clone https://github.com/marahimu-kun/quora-clone-nodejs
    cd quora-clone-nodejs
 2. **Install dependencies**
    ```
