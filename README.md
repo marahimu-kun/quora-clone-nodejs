@@ -64,7 +64,7 @@ This project was created as part of my backend learning journey. It helped me un
 
 ## 👤 Author
 
-Made by Your Name
+Made by marahimu_kun
 Built with ❤️ for learning and fun!
 
 ---
